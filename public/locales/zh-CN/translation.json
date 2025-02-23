@@ -1,0 +1,91 @@
+{
+  "header": {
+    "title": "Dive AI"
+  },
+  "chat": {
+    "placeholder": "输入消息...",
+    "newChat": "新对话",
+    "history": "历史记录",
+    "copyCode": "复制",
+    "previewCode": "点击预览",
+    "uploadFile": "上传文件",
+    "send": "发送",
+    "untitledChat": "未命名对话",
+    "deleteChat": "删除对话",
+    "deleteSuccess": "对话已删除",
+    "deleteFailed": "删除失败",
+    "confirmDelete": "确认删除",
+    "tools": "工具",
+    "abort": "停止生成",
+    "retry": "重试"
+  },
+  "welcome": {
+    "title": "欢迎使用Dive AI",
+    "subtitle": "开始您的AI对话",
+    "startChat": "开始对话"
+  },
+  "setup": {
+    "title": "初始设置",
+    "subtitle": "请配置模型设置",
+    "required": "此字段为必填项",
+    "submit": "保存设置",
+    "provider": "模型提供商",
+    "verify": "验证模型",
+    "verifySuccess": "模型验证成功",
+    "verifySuccessNoTool": "模型验证成功，但不支持MCP工具调用",
+    "verifyFailed": "模型验证失败",
+    "verifyError": "验证过程中发生错误",
+    "saveSuccess": "设置保存成功",
+    "saveFailed": "保存设置失败",
+    "back": "返回",
+    "parameters": "参数",
+    "topPDescription": "Top P是控制GPT模型生成文本多样性的参数。在生成文本时，模型会为每个生成的单词或token计算概率分布。Top P控制选择用于文本生成的最高概率单词或token的数量。例如，如果top_p=0.9，则阈值设置为包含累积概率质量达到90%的token。",
+    "temperatureDescription": "Temperature是控制GPT模型生成文本'创造性'或随机性的参数。较高的temperature（例如0.7）会导致更多样化和创新的输出，而较低的temperature（例如0.2）会使输出更加确定和集中。"
+  },
+  "sidebar": {
+    "tools": "工具管理(MCP)",
+    "settings": "模型设置",
+    "update": "有可用更新",
+    "models": "模型设置",
+    "system": "系统设置"
+  },
+  "tools": {
+    "title": "工具管理(MCP)",
+    "subtitle": "MCP服务器的工具和设置",
+    "editConfig": "编辑配置",
+    "configTitle": "MCP服务器配置",
+    "save": "保存",
+    "cancel": "取消",
+    "saveSuccess": "设置保存成功",
+    "saveFailed": "保存设置失败",
+    "openConfigFolder": "打开配置文件夹",
+    "addServer": "添加MCP服务器",
+    "addServerTitle": "添加MCP服务器",
+    "addServerSubtitle": "请直接粘贴MCP服务器Json",
+    "fetchFailed": "加载工具失败",
+    "configFetchFailed": "加载配置失败",
+    "invalidJson": "JSON格式无效",
+    "updateFailed": "{{serverName}} 加载失败: {{error}}"
+  },
+  "modelConfig": {
+    "title": "模型设置",
+    "customInstructions": "自定义指令",
+    "customInstructionsPlaceholder": "输入自定义模型指令...",
+    "customInstructionsDescription": "这些指令会附加到每个请求发送的系统提示末尾。",
+    "saveInstructions": "保存指令",
+    "customRulesSaved": "自定义指令已保存",
+    "customRulesFailed": "保存自定义指令失败",
+    "modelDescription": "使用的模型名称",
+    "modelDescriptionHint": "使用的模型名称（请先输入API密钥以查看可用模型）"
+  },
+  "common": {
+    "close": "关闭",
+    "confirm": "确认",
+    "cancel": "取消"
+  },
+  "system": {
+    "title": "系统设置",
+    "language": "系统语言",
+    "theme": "显示模式"
+  }
+}

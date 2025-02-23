@@ -7,6 +7,16 @@ import { defaultInterface, interfaceAtom, ModelProvider } from "../atoms/interfa
 import { activeProviderAtom, configAtom } from "../atoms/configState"
 import { showToastAtom } from "../atoms/toastState"
 
+interface SubmitData {
+  success: boolean
+  config?: {
+    apiKey?: string
+    model?: string
+    temperature?: number
+    topP?: number
+  }
+}
+
 const ConfigSidebar = () => {
   const { t } = useTranslation()
   const [isVisible, setIsVisible] = useAtom(configSidebarVisibleAtom)
@@ -22,7 +32,7 @@ const ConfigSidebar = () => {
     }
   }, [isVisible, activeProvider, fields])
 
-  const handleSubmit = async (data: Record<string, any>) => {
+  const handleSubmit = async (data: SubmitData) => {
     try {
       if (data.success) {
         showToast({
@@ -39,7 +49,7 @@ const ConfigSidebar = () => {
       })
     }
   }
-  
+
   return (
     <>
       {isVisible && (
@@ -75,4 +85,4 @@ const ConfigSidebar = () => {
   )
 }
 
-export default React.memo(ConfigSidebar) 
+export default React.memo(ConfigSidebar)
