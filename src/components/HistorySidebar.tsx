@@ -113,7 +113,6 @@ const HistorySidebar = ({ onNewChat }: Props) => {
 
   const loadChat = useCallback((chatId: string) => {
     setCurrentChatId(chatId)
-    setIsVisible(false)
     closeAllOverlays()
     navigate(`/chat/${chatId}`)
   }, [navigate, setIsVisible])
@@ -211,11 +210,11 @@ const HistorySidebar = ({ onNewChat }: Props) => {
               className="sidebar-footer-btn update-btn"
               onClick={() => window.open("https://github.com/OpenAgentPlatform/Dive/releases/latest", "_blank")}
             >
-              <div>
+              <div className="update-btn-wrap">
                 <span>✨</span>
                 <span className="update-btn-text">{t("sidebar.update")}</span>
               </div>
-              <div>
+              <div className="update-btn-text">
                 <span>v{newVersion} &gt;</span>
               </div>
             </button>
